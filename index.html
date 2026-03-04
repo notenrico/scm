@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle SCM</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <h1 onclick="location.reload()">Moodle SCM</h1>
+        </div>
+        <button id="theme-toggle" title="Cambia Tema">🌙</button>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2 class="text-center" style="margin-bottom: 30px; color: var(--primary);">Seleziona la materia</h2>
+            
+            <div class="grid-buttons">
+                <button onclick="location.href='sdi.html'" class="btn-primary">Modulo Utente SDI</button>
+                <button onclick="location.href='crim.html'" class="btn-primary">Criminalistica</button>
+                <button onclick="location.href='prociv.html'" class="btn-primary">Procedura Civile</button>
+                <button onclick="location.href='dircom.html'" class="btn-primary">Diritto Commerciale</button>
+                <button onclick="location.href='dirue.html'" class="btn-primary">Diritto UE</button>
+                <button onclick="location.href='tecinv2.html'" class="btn-primary">Tecniche Investigative</button>
+            </div>
+
+            <p class="text-center" style="margin-top: 30px; color: #666; font-size: 0.9em;">
+                Seleziona una materia per accedere ai relativi quiz.
+            </p>
+        </section>
+    
+        <section class="card">
+            <h2 class="text-center" style="color: var(--primary);">Countdown al Traguardo</h3>
+            
+            <div id="full-countdown" class="text-center"></div>
+
+            <div class="actions-center">
+                <input type="date" id="date-input" class="btn-secondary">
+                <button id="set-date-btn" class="btn-primary">Personalizza</button>
+            </div>
+        </section>
+        
+        <script src="assets/js/countd.js"></script>
+        <script src="assets/js/main.js"></script>
+    </main>
+</body>
+</html>

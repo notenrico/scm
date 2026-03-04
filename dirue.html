@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSCM - Diritto UE</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <h1 onclick="location.href='index.html'">Moodle SCM - Diritto dell'Unione Europea</h1>
+        </div>
+        <button id="theme-toggle" title="Cambia Tema">🌙</button>
+    </header>
+
+    <main class="container">
+        <section id="view-menu" class="card">
+            <div class="text-center" style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+                <button onclick="location.href='index.html'" class="btn-secondary" style="font-size: 0.9em;">
+                    &larr; Torna alla scelta materie
+                </button>
+            </div>
+            <p class="text-center" style="font-size: 1.2em; margin-bottom: 20px;">
+                Seleziona il quiz che desideri avviare:
+            </p>
+            <div id="list" class="grid-buttons"></div>
+        </section>
+
+        <section id="view-quiz" class="card hidden">
+            <div class="progress-bar">Domanda <span id="q-curr">0</span> di <span id="q-tot">0</span></div>
+            <div id="question-box">
+                <h3 id="q-text"></h3>
+                <div id="ans-box" class="grid-buttons vertical"></div>
+            </div>
+            <div class="actions"> 
+                <button id="btn-next" class="btn-secondary hidden">Prossima Domanda &rarr;</button>
+                <button id="btn-end" class="btn-danger">Termina Quiz</button>
+            </div>
+        </section>
+
+        <section id="view-end" class="card hidden">
+            <h2 class="text-center">Quiz Completato!</h2>
+            <div id="score" class="score-display"></div>
+            <div id="err-box" class="actions-center"></div>
+            <div class="actions-center" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+                <button onclick="app.init()" class="btn-secondary">Torna al Menu Quiz</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/dirue/dirue1-data.js"></script>
+    <script src="assets/js/dirue/dirue2-data.js"></script>
+    <script src="assets/js/dirue/dirue3-data.js"></script>
+    <script src="assets/js/dirue/dirue4-data.js"></script>
+    <script src="assets/js/dirue/dirue5-data.js"></script>
+    <script>
+        window.quizConfig = {
+            'dirue1': 'Dir. UE - 10 domande',
+            'dirue2': 'Dir. UE - 65 domande',
+            'dirue3': 'Dir. UE - 65 domande v2',
+            'dirue4': 'Dir. UE - 110 domande',
+            'dirue5': 'Dir. UE - 111 domande',
+        };
+    </script>
+
+    <script src="assets/js/main.js"></script>
+
+    <div id="print-area"></div>
+</body>
+</html>
