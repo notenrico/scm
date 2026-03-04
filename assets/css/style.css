@@ -200,7 +200,7 @@ button:active:not([disabled]) {
 .subtitle { font-size: 1.2em; margin-bottom: 20px; }
 .text-sm { font-size: 0.9em; }
 
-.summary-title { font-size: 1.4em; font-weight: 700; color: var(--success); outline: none; cursor: pointer; }
+.summary-title { font-size: 1.4em; font-weight: 700; color: var(--primary); outline: none; cursor: pointer; }
 
 .countdown-display { font-size: 1.5em; font-weight: bold; margin: 20px 0; }
 
