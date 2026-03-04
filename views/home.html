@@ -1,0 +1,25 @@
+<section class="card">
+    <h2 class="text-center" style="margin-bottom: 30px; color: var(--primary);">Seleziona la materia</h2>
+    
+    <div class="grid-buttons">
+        <button onclick="navigate('quiz', 'sdi')" class="btn-primary">Modulo Utente SDI</button>
+        <button onclick="navigate('quiz', 'crim')" class="btn-primary">Criminalistica</button>
+        <button onclick="navigate('quiz', 'prociv')" class="btn-primary">Procedura Civile</button>
+        <button onclick="navigate('quiz', 'dircom')" class="btn-primary">Diritto Commerciale</button>
+        <button onclick="navigate('quiz', 'dirue')" class="btn-primary">Diritto UE</button>
+        <button onclick="navigate('quiz', 'tecinv2')" class="btn-primary">Tecniche Investigative</button>
+    </div>
+
+    <p class="text-center" style="margin-top: 30px; color: #666; font-size: 0.9em;">
+        Seleziona una materia per accedere ai relativi quiz.
+    </p>
+</section>
+
+<section class="card">
+    <h2 class="text-center" style="color: var(--primary);">Countdown al Traguardo</h2>
+    <div id="full-countdown" class="text-center" style="font-size: 1.5em; font-weight: bold; margin: 20px 0;"></div>
+    <div class="actions-center">
+        <input type="date" id="date-input" class="btn-secondary">
+        <button id="set-date-btn" class="btn-primary">Personalizza</button>
+    </div>
+</section>

@@ -5,21 +5,21 @@ const app = {
     st: { q: [], wrong: [], idx: 0, score: 0 },
 
     init() {
+        this.reg = window.quizConfig || {}; // Aggiorna i dati correnti
+        
+        // Gestione Tema (eseguita una volta sola)
         const themeBtn = $('theme-toggle');
-        if (themeBtn) {
+        if (themeBtn && !themeBtn.dataset.active) {
+            themeBtn.dataset.active = "true";
             if (localStorage.getItem('theme') === 'dark') {
                 document.body.classList.add('dark-mode');
                 themeBtn.innerText = '☀️';
             }
             themeBtn.onclick = () => {
                 document.body.classList.toggle('dark-mode');
-                if (document.body.classList.contains('dark-mode')) {
-                    localStorage.setItem('theme', 'dark');
-                    themeBtn.innerText = '☀️';
-                } else {
-                    localStorage.setItem('theme', 'light');
-                    themeBtn.innerText = '🌙';
-                }
+                const isDark = document.body.classList.contains('dark-mode');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                themeBtn.innerText = isDark ? '☀️' : '🌙';
             };
         }
 
@@ -28,8 +28,8 @@ const app = {
         if(!list) return;
         
         list.innerHTML = `
-            <div class="text-center">
-                <label class="shuffle-label">
+            <div class="text-center" style="margin-bottom: 15px;">
+                <label class="shuffle-label" style="cursor:pointer; font-weight:bold;">
                     <input type="checkbox" id="shuffle-toggle"> Mischia ordine domande
                 </label>
             </div>
@@ -191,5 +191,3 @@ document.addEventListener('keydown', (e) => {
     }
     if (e.key === 'Enter' && !$('btn-next').classList.contains('hidden')) $('btn-next').click();
 });
-
-window.onload = app.init;
