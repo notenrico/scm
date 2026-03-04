@@ -5,9 +5,8 @@ const app = {
     st: { q: [], wrong: [], idx: 0, score: 0 },
 
     init() {
-        this.reg = window.quizConfig || {}; // Aggiorna i dati correnti
+        this.reg = window.quizConfig || {};
         
-        // Gestione Tema (eseguita una volta sola)
         const themeBtn = $('theme-toggle');
         if (themeBtn && !themeBtn.dataset.active) {
             themeBtn.dataset.active = "true";
@@ -28,8 +27,8 @@ const app = {
         if(!list) return;
         
         list.innerHTML = `
-            <div class="text-center" style="margin-bottom: 15px;">
-                <label class="shuffle-label" style="cursor:pointer; font-weight:bold;">
+            <div class="text-center shuffle-wrapper">
+                <label class="shuffle-label">
                     <input type="checkbox" id="shuffle-toggle"> Mischia ordine domande
                 </label>
             </div>
@@ -143,7 +142,7 @@ const app = {
     end() {
         app.view('view-end');
         const { q, score, wrong } = app.st;
-        let errHtml = wrong.length ? `<br><small style="color:var(--danger)">Errori: ${wrong.length}</small>` : '';
+        let errHtml = wrong.length ? `<br><small class="text-danger">Errori: ${wrong.length}</small>` : '';
         $('score').innerHTML = `Punteggio: ${score} / ${q.length}${errHtml}`;
         
         const errBox = $('err-box');

@@ -1,10 +1,10 @@
 <section id="view-menu" class="card">
-    <div class="text-center" style="margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
-        <button onclick="navigate('home')" class="btn-secondary" style="font-size: 0.9em;">
+    <div class="text-center view-header">
+        <button onclick="navigate('home')" class="btn-secondary text-sm">
             &larr; Torna alla scelta materie
         </button>
     </div>
-    <p class="text-center" style="font-size: 1.2em; margin-bottom: 20px;">
+    <p class="text-center subtitle">
         Seleziona il quiz che desideri avviare:
     </p>
     <div id="list" class="grid-buttons vertical"></div>
@@ -26,7 +26,7 @@
     <h2 class="text-center">Quiz Completato!</h2>
     <div id="score" class="score-display"></div>
     <div id="err-box" class="actions-center"></div>
-    <div class="actions-center" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+    <div class="actions-center view-footer">
         <button onclick="app.init()" class="btn-secondary">Torna al Menu Quiz</button>
     </div>
 </section>

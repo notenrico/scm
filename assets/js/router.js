@@ -1,7 +1,6 @@
 const mainContent = document.getElementById('main-content');
 const homeLogo = document.getElementById('home-logo');
 
-// Configurazione Materie
 const materie = {
     'sdi': {
         title: 'Modulo Utente SDI',
@@ -36,7 +35,7 @@ const materie = {
 };
 
 async function navigate(view, materiaKey = null) {
-    mainContent.style.opacity = '0'; // Dissolvenza in uscita
+    mainContent.style.opacity = '0'; 
     
     try {
         const response = await fetch(`views/${view}.html`);
@@ -50,7 +49,6 @@ async function navigate(view, materiaKey = null) {
                 homeLogo.innerText = `Moodle SCM - ${m.title}`;
                 window.quizConfig = m.config;
                 
-                // Correzione: richiamiamo l'app in modo globale e sicuro
                 loadMultipleScripts(m.data, () => {
                     if (typeof app !== 'undefined') {
                         app.reg = window.quizConfig;
@@ -58,12 +56,11 @@ async function navigate(view, materiaKey = null) {
                     }
                 });
             } else {
-                // Siamo tornati alla Home
                 homeLogo.innerText = "Moodle SCM";
                 if (typeof initCountdown !== 'undefined') initCountdown();
             }
             
-            mainContent.style.opacity = '1'; // Dissolvenza in entrata
+            mainContent.style.opacity = '1'; 
         }, 200);
     } catch (e) {
         mainContent.innerHTML = "<div class='card text-center'><h2>Errore</h2><p>Impossibile caricare la pagina.</p></div>";
@@ -71,11 +68,9 @@ async function navigate(view, materiaKey = null) {
     }
 }
 
-// Funzione per caricare i file dei database dinamicamente
 function loadMultipleScripts(scripts, callback) {
     let loaded = 0;
     scripts.forEach(src => {
-        // Rimuove la versione vecchia se esiste per pulire la memoria
         const oldScript = document.querySelector(`script[src="${src}"]`);
         if (oldScript) oldScript.remove();
 
@@ -86,6 +81,5 @@ function loadMultipleScripts(scripts, callback) {
     });
 }
 
-// Eventi
 homeLogo.onclick = () => navigate('home');
 window.addEventListener('DOMContentLoaded', () => navigate('home'));

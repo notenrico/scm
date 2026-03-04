@@ -5,7 +5,7 @@ window.initCountdown = function() {
 
     const update = () => {
         const el = $('full-countdown');
-        if (!el) return; // Se siamo nella pagina quiz, si ferma
+        if (!el) return; 
         
         const diff = target - new Date().getTime();
         
@@ -34,7 +34,6 @@ window.initCountdown = function() {
         };
     }
     
-    // Pulisce il vecchio timer per non sovraccaricare la memoria
     if (window.countdownInterval) clearInterval(window.countdownInterval);
     window.countdownInterval = setInterval(update, 1000); 
     update();
