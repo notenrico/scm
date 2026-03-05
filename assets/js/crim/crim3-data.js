@@ -628,6 +628,106 @@ const crim3Data = [
             "Perche' in quelle zone la vernice e' piu' spessa e si asporta piu' facilmente col bisturi"
         ],
         "correctAnswer": "Perche' sono zone protette che raramente subiscono riverniciature, garantendo il colore originale"
+    },
+    {
+        question: "I preservativi, contenenti tracce biologiche, devono essere repertati:",
+        answers: [
+            "in buste di plastica contenenti bustine di sale", 
+            "in buste di carta previa essiccazione", 
+            "in provette da sottoporre a congelamento", 
+            "in buste di plastica"
+        ],
+        correctAnswer: "in provette da sottoporre a congelamento"
+    },
+    {
+        question: "Al fine di descrivere compiutamente una traccia di sangue, è necessario individuare e descriverne:",
+        answers: [
+            "numero, ampiezza, estensione e colorazione", 
+            "dimensione, forma, distribuzione e concentrazione", 
+            "dislocamento, ampiezza, numero e vastità", 
+            "collocamento, concentrazione, variazione e colorazione"
+        ],
+        correctAnswer: "dimensione, forma, distribuzione e concentrazione"
+    },
+    {
+        question: "Le tracce da trasferimento sono:",
+        answers: [
+            "sono sempre latenti", 
+            "non necessariamente sono determinate dal contatto di un oggetto con un altro", 
+            "sempre determinate dal contatto di un oggetto con un altro", 
+            "non sono mai determinate dal contatto di un oggetto con un altro"
+        ],
+        correctAnswer: "sempre determinate dal contatto di un oggetto con un altro"
+    },
+    {
+        question: "Un cadavere ha ipostasi sul dorso, ma la rigidita' e' presente solo alla mandibola e al collo. Cosa suggerisce il quadro?",
+        answers: [
+            "Che il decesso e' molto recente (3-4 ore), poiche' la rigidita' segue una progressione cranio-caudale", 
+            "Che il cadavere e' stato spostato dopo 48 ore, ribaltandolo dalla posizione prona a quella supina", 
+            "Che la morte e' avvenuta da almeno 36 ore, dato che la rigidita' inizia a risolversi dal viso", 
+            "Che si tratta di avvelenamento da monossido di carbonio, data la tipica colorazione delle macchie"
+        ],
+        correctAnswer: "Che il decesso e' molto recente (3-4 ore), poiche' la rigidita' segue una progressione cranio-caudale"
+    },
+    {
+        question: "I livelli di repertamento di un sistema digitale sono:",
+        answers: [
+            "il repertamento delle impronte digitali sull'oggetto fisico e l'acquisizione dei files detenuti in violazione delle norme sul copyright;", 
+            "il repertamento logico dei dati ed il repertamento illogico delle informazioni;", 
+            "il repertamento dell'oggetto fisico ed il repertamento logico dei dati/informazioni;", 
+            "il repertamento di memorie di massa ed il repertamento di dispositivi mobili"
+        ],
+        correctAnswer: "il repertamento dell'oggetto fisico ed il repertamento logico dei dati/informazioni;"
+    },
+    {
+        question: "Il sopralluogo del medico legale è:",
+        answers: [
+            "autonomo e successivo al sopralluogo giudiziario", 
+            "parte integrante del sopralluogo giudiziario e si svolge in sinergia con gli operatori di PG", 
+            "precedente al sopralluogo giudiziario", 
+            "alternativo al sopralluogo giudiziario"
+        ],
+        correctAnswer: "parte integrante del sopralluogo giudiziario e si svolge in sinergia con gli operatori di PG"
+    },
+    {
+        question: "Sotto il profilo della correttezza giuridica, la rimozione del cadavere sulla scena del crimine viene autorizzata:",
+        answers: [
+            "dall'ufficiale di p.g. responsabile del sopralluogo", 
+            "dal Comandante di Compagnia", 
+            "dal Pubblico Ministero", 
+            "dal comandante della Stazione"
+        ],
+        correctAnswer: "dal Pubblico Ministero"
+    },
+    {
+        question: "Quale caratteristica chimico-fisica del TATP rende indispensabile l'intervento degli artificieri in caso di rinvenimento di una marmotta?",
+        answers: [
+            "L'elevata sensibilita' della sostanza agli urti, allo sfregamento ed alla fiamma, soprattutto quando si presenta asciutta", 
+            "Il fatto che il TATP sia un esplosivo a bassa pressione che necessita di essere bagnato per poter detonare correttamente", 
+            "La capacita' del composto di trasudare vapori tossici che sciolgono istantaneamente il nastro isolante di protezione", 
+            "La necessita' di collegare il dispositivo a una batteria da 220V per rendere inerte la carica esplosiva artigianale"
+        ],
+        correctAnswer: "L'elevata sensibilita' della sostanza agli urti, allo sfregamento ed alla fiamma, soprattutto quando si presenta asciutta"
+    },
+    {
+        question: "Nel ragionamento investigativo, il metodo abduttivo si distingue perche':",
+        answers: [
+            "Si basa sull'intuizione del primo operatore giunto sul posto senza protocolli", 
+            "Ricava una verita' particolare partendo da una verita' generale in modo certo", 
+            "Risale ad affermazioni generali partendo dalla sola osservazione di fatti particolari", 
+            "Parte da un'ipotesi promettente da verificare escludendo le opzioni meno coerenti"
+        ],
+        correctAnswer: "Parte da un'ipotesi promettente da verificare escludendo le opzioni meno coerenti"
+    },
+    {
+        question: "Se, all'atto dell'intervento, il personale paramedico o medico è già sul posto:",
+        answers: [
+            "non rileva sapere se siano stati mossi il corpo o altri oggetti nella scena", 
+            "è possibile determinare i movimenti del personale sanitario solo dietro consenso di quest'ultimo", 
+            "solo il P.M. è autorizzato a verificare se il personale sanitario abbia mosso il corpo o oggetti nel luogo d'interesse", 
+            "occorre determinare se sia sta modificata la posizione del corpo o di altri oggetti"
+        ],
+        correctAnswer: "occorre determinare se sia sta modificata la posizione del corpo o di altri oggetti"
     }
 ];
 
